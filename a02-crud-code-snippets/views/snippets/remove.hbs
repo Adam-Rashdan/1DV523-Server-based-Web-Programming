@@ -1,0 +1,11 @@
+<h1 class="small-margin">Remove code snippet</h1>
+{{>snippetsmenu}}
+<div class="input-bg">
+    <div id="created-at">Created: {{viewData.createdAt}}</div>
+    <form method="post" action="/snippets/{{viewData.id}}/delete">
+        <textarea name="snippet" rows="20" cols="60">{{viewData.snippet}}</textarea>
+        <br><br>
+        <input class="button" type="submit" value="Remove">
+    </form>
+</div>
+<br>

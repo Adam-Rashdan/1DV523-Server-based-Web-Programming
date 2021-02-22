@@ -1,0 +1,21 @@
+<h1 class="small-margin">Snippets Page</h1>
+{{>snippetsmenu}}
+{{#if viewData.snippets.length }}
+{{#each viewData.snippets}}
+<div class="input-bg">
+    <div id="created-at">Created: {{this.createdAt}}</div>
+    <textarea name="snippet" rows="20" cols="60" readonly>{{this.snippet}}</textarea>
+    <br><br>
+    <a href="/snippets/{{this.id}}/edit" class="btn">Edit</a>
+    <a href="/snippets/{{this.id}}/remove" class="btn">Remove</a>
+</div>
+<br>
+{{/each}}
+{{else}}
+<div class="input-bg">
+    <textarea name="snippet" rows="20" cols="60" readonly>There are no code snippets to display</textarea>
+    <br><br>
+    <a href="#" class="btn">Edit</a>
+    <a href="#" class="btn">Delete</a>
+</div>
+{{/if}}

@@ -1,0 +1,31 @@
+<div class="center-text">
+    <h1>Real-time issues</h1>
+</div>
+<div class="flex">
+    <h3 class="flex-item">All issues</h3>
+    <h3 class="flex-item">Notifications</h3>
+    <ul id="issues" class="flex-item">
+        {{#if issuesData.issues.length}}
+        {{#each issuesData.issues}}
+        <li id="issue">
+            <div class="issue-div" data-issue-id="{{this.id}}">
+                <div class="issue-div-header">{{this.title}}</div>
+                <ul id="issue-ul">
+                    <li id="author">Author: {{this.author}}</li>
+                    <li id="description">Description: {{this.description}}</li>
+                    <li id="url">Url: <a href="{{this.url}}" target="_blank">{{this.url}}</a></li>
+                    <li id="comments">Comments: {{this.comments}}</li>
+                    <li id="created-at">Created: {{this.createdAt}}</li>
+                    <li id="updated-at">Updated: {{this.updatedAt}}</li>
+                </ul>
+            </div>
+        </li>
+        {{/each}}
+        {{else}}
+        <li>No issues reported.</li>
+        {{/if}}
+    </ul>
+    <ul id="notifications" class="flex-item">
+
+    </ul>
+</div>

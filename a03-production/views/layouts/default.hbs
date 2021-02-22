@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Real-time issues</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <template id="issue-template">
+        <li id="issue">
+            <div class="issue-div" data-issue-id="">
+                <div class="issue-div-header"></div>
+                <ul id="issue-ul">
+                    <li id="author">Author/Username:</li>
+                    <li id="description">Description: </li>
+                    <li id="url">Url: <a href="" target="_blank"></a></li>
+                    <li id="comments">Comments: </li>
+                    <li id="created-at">Created: </li>
+                    <li id="updated-at">Updated:</li>
+                </ul>
+            </div>
+        </li>
+    </template>
+    <template id="note-template">
+        <li id="note">
+            <div data-issue-id="" class="note-div">
+                <div class="issue-div-header"></div>
+                <ul id="note-ul">
+                    <li id="author">Author/Username: </li>
+                    <li id="Time">Time: </li>
+                </ul>
+            </div>
+        </li>
+    </template>
+    <div id="container">
+        {{{body}}}
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

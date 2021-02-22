@@ -1,0 +1,15 @@
+<header>
+    <ul class="navBar">
+        <li class="nav-li"><a href="/">Home</a></li>
+        <li class="nav-li"><a href="/snippets/">Code</a></li>
+        {{#if expreq.length }}
+        <li class="nav-li"><a href="/logout/">Logout</a></li>
+        <li class="nav-li logged-in">Logged In As: {{expreq}}</li>
+    </ul>
+    {{else}}
+    <li class="nav-li"><a href="/login/">Login</a></li>
+    <li class="nav-li"><a href="/register/">Register</a></li>
+
+    </ul>
+    {{/if}}
+</header>

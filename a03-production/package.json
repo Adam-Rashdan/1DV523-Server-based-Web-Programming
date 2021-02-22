@@ -1,0 +1,42 @@
+{
+  "name": "a03-production",
+  "version": "1.0.0",
+  "description": "Assigment 3 for Server-based Web Programming (1DV523)",
+  "main": "app.js",
+  "scripts": {
+    "start": "SET NODE_ENV=production & node app.js",
+    "lint": "npx eslint . || exit 0",
+    "lint:fix": "npx eslint . --fix || exit 0",
+    "devstart": " SET NODE_ENV=development & nodemon --inspect ./app.js -e js,hbs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.lnu.se:1dv523/student/ar223hf/a03-production.git"
+  },
+  "author": "Adam Rashdan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-hbs": "^2.3.4",
+    "moment": "^2.29.1",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.1",
+    "socket.io": "^3.0.5"
+  },
+  "devDependencies": {
+    "@lnu/eslint-config": "^1.1.2",
+    "eslint": "^7.16.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^30.7.9",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "eslintConfig": {
+    "extends": "@lnu"
+  }
+}

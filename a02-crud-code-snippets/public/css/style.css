@@ -1,0 +1,175 @@
+html {
+  background-color: whitesmoke;
+}
+h1 {
+  color: red;
+  text-align: center;
+}
+
+.test11 {
+  margin-top: 100px;
+}
+#container {
+  width: 100%;
+  height: 92%;
+  display: flex;
+  flex-direction: column;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.small-margin {
+  margin: 5px;
+}
+
+.small-bottom-margin {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.navBar {
+  left: 0;
+  top: 0;
+  list-style-type: none;
+  width: 100%;
+  overflow: hidden;
+  background-color: #444;
+}
+
+.alert {
+  margin: 10px auto 0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  color: black;
+  font-size: x-large;
+}
+
+.alert-danger {
+  background-color: #cc3300;
+  height: 30px;
+}
+
+.alert-success {
+  background-color: #339900;
+  height: 30px;
+}
+
+.alert-warning {
+  background-color: #ffcc00;
+  height: 30px;
+}
+
+.snippets {
+  list-style-type: none;
+  margin: 0 auto 0;
+  width: 10%;
+  background-color: #333;
+}
+
+.snippet-input {
+  margin: 30px auto 0;
+  padding: 50px 15px 10px 15px;
+  background-color: gray;
+  width: 40%;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input,
+select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.nav-li {
+  float: left;
+}
+
+.nav-li a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.input-bg {
+  position: relative;
+  margin: 20px auto 0;
+  border-radius: 5px;
+  background-color: darkslategrey;
+  padding: 20px;
+  color: white;
+  width: 40%;
+  opacity: 0.9;
+}
+
+#created-at {
+  margin: auto;
+  width: 100%;
+  color: white;
+  text-align: left;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.logged-in {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-li a:hover {
+  background-color: gray;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #444;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  padding: 10px;
+}
+
+footer a {
+  color: white;
+}
